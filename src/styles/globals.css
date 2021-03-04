@@ -1,0 +1,22 @@
+:root {
+  --primary:   #6E00EE;
+  --secondary: #03DAC5;
+
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --yellow: #ffb703;
+
+  --bg-gray:  #f2f3f5;
+  --bg-dark:  #363740;
+  --bg-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-gray);
+  font-family: sans-serif;
+}

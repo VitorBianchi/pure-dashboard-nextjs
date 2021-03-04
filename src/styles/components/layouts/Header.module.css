@@ -1,0 +1,14 @@
+.headerContainer {
+  grid-area: header;
+  background-color: var(--bg-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+}
+
+.headerSearch { margin-left:  1rem; }
+
+.headerAvatar { margin-right: 1rem; }
+.headerAvatar > img { height: 3rem; width: auto; border-radius: 50%;}

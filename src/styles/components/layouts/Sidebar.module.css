@@ -1,0 +1,55 @@
+.sidebarContainer {
+  grid-area: sidebar;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 15rem;
+  position: fixed;
+  overflow-y: auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  z-index: 2; /* Needs to sit above the hamburger menu icon */
+  transform: translateX(-245px);
+  transition: all .6s ease-in-out
+}
+
+.sidebarContainer.active {
+  transform: translateX(0);
+}
+
+@media only screen and (min-width: 46.875em) {
+  .sidebarContainer {
+    position: relative; /* Fixed position on mobile */
+    transform: translateX(0);
+  }
+
+  .sidebarClose {
+    visibility: hidden;
+  }
+}
+
+.sidebarList {
+  padding: 0;
+  margin-top: 5rem;
+  list-style-type: none;
+}
+
+.sidebarListItem {
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  color: #dddddd;
+}
+
+.sidebarListItem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidebarClose {
+  position: absolute;
+  visibility: visible;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ddd;
+}

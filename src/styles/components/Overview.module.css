@@ -1,0 +1,38 @@
+.overviewContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); /* Where the magic happens */
+  grid-auto-rows: 5.875rem;
+  grid-gap: 1.25rem;
+  margin: 1.25rem;
+}
+
+.overviewCard {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.overviewCard > span {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.overviewCard > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-weight: 700;
+  font-size: 2rem;
+  padding:0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--primary);
+}

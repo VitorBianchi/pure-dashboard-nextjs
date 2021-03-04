@@ -1,0 +1,17 @@
+.footerContainer {
+  grid-area: footer;
+  background-color: var(--bg-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.footerCopyright { margin-left: 1rem; }
+
+.footerSignature { margin-right: 1rem; }
+
+.footerSignature > a { text-decoration: none; }
+
+.footerSignature > a:visited { color: var(--primary); }
